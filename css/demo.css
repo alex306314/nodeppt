@@ -1,6 +1,9 @@
 *{
   font-family: 'Microsoft Yahei'!important;
 }
+.fa{
+  font: normal normal normal 14px/1 FontAwesome!important;
+}
 .mulu h4{
   border:1px solid #d1d1d1;
   border-radius:5px;

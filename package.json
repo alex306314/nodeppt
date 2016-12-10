@@ -1,0 +1,20 @@
+{
+  "name": "nodeppt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodeppt start -p 8080 -d /Users/aqrun/project/nodeppt -H 127.0.0.1",
+    "build": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alex306314/nodeppt.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alex306314/nodeppt/issues"
+  },
+  "homepage": "https://github.com/alex306314/nodeppt#readme"
+}
