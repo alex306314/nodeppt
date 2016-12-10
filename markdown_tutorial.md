@@ -152,6 +152,38 @@ Markdown 的粗体和斜体也非常简单，用两个 \* 包含一段文本就�
 <img src="/images/markdown/code.jpg" alt="" style="height:250px;margin:0 auto;">
 
 [slide]
+
+```php
+<?php
+/**
+ * PHP 代码块示例
+ */
+namespace api\modules\version_1\controllers;
+
+use \api\modules\version_1\base\BaseController;
+use \api\helpers\JsonHelper;
+
+/**
+ * Default controller for the `v1` module
+ */
+class DefaultController extends BaseController implements DefaultControllerInterface{
+    /**
+     * @inheritdoc
+     */
+    public function actionGetVersion() {
+        \Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
+        if (\Yii::$app->request->isPost) {
+            $device = $this->requestData('device');
+            return $model->getVersionByDevice($device, $version_code, $product_type);
+        } else {
+            return JsonHelper::error(['msg' => 'Request type or date error!']);
+        }
+    }
+}
+```
+
+
+[slide]
 # 分割线
 
 分割线的语法只需要另起一行，连续输入三个星号 *** 即可。
